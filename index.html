@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ипотечный калькулятор</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<hi class="title">
+		Калькулятор ипотечного кредитования
+	</hi>
+	<label class="title-input" for="inputPrice" >Стоимость недвижимости</label>
+	<input type="text" id="inputPrice" name="" class="input-text" value="10000000 ₽">
+	<input type="range" name="" id="inputPriceRange" class="input-range" min="0" max="15000000">
+	<p>Сумма,которую заплатит банк</p>
+	<label class="title-input" for="inputСontribution" >Первый взнос</label>
+	<input type="text" id="inputСontribution" name="" class="input-text" value="2500000 ₽">
+	<input type="range" name="" id="inputСontributionRange" class="input-range" min="0" max="15000000">
+	<p>Ваш первый взнос в виде погашения кредита</p>
+	<label class="title-input" for="inputTerm" >Срок кредита</label>
+	<input type="text" id="inputTerm" name="" class="input-text" value="10 лет">
+	<input type="range" name="" id="inputTermRange" class="input-range" min="1" max="30">
+	<p>Как долго в месяцах планируете возвращять долг банку</p>
+	<label class="title-input" for="inputPercent" >Процентная ставка</label>
+	<input type="text" id="inputPercent" name="" class="input-text" value="10%">
+	<p>На какую сумму будет возрастать ваш долг</p>
+	<h2 class="title-h2">
+		Итого: <span id="itog">10000 ₽</span>
+	</h2>
+	<p>
+		Общяя выплата: <span id="ob_itog">10000000 ₽</span>
+	</p>
+	<p>
+		Переплата: <span id="pereplata">1000000 ₽</span>
+	</p>
+	<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
